@@ -1,0 +1,24 @@
+{
+  "name": "Bookmark share",
+  "description" : "Share bookmarks with your friends!",
+  "version": "2.2",
+  "manifest_version": 2,
+  "icons": {
+      "48": "ic_book_black_24dp.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "ic_book_black_24dp.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": [
+      "bookmarks",
+      "storage",
+      "alarms",
+      "http://localhost:9000/",
+      "https://ncw2tqfdyh.execute-api.eu-central-1.amazonaws.com/"
+  ]
+}

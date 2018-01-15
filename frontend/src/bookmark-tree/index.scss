@@ -1,0 +1,18 @@
+.bookmarks {
+  padding: 5px;
+  min-width: 200px;
+
+  .folder {
+    padding: 2px 0;
+  }
+
+  li[notselectable="true"] > .title-wrap {
+    text-decoration: line-through;
+  }
+
+  &-button-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+}

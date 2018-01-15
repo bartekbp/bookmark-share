@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="height: 10px">
+	<head>
+	</head>
+<body class="mdc-typography">
+  <div class="container">
+  	<section class="share">
+	  	<button type="button" class="share-bookmarks-button mdc-button mdc-button--stroked secondary-stroked-button">Share your bookmarks</button>
+    </section>
+		<section class="shares">
+			<div class="mdc-list-group">
+				<h3 class="mdc-list-group__subheader" style="display: none">Synchronizing</h3>
+				<ul class="shares-list mdc-list mdc-list--two-line">
+				</ul>
+			</div>
+		</section>
+    <section class="sync">
+			<h3 class="mdc-typography--subheading1 mdc-typography--adjust-margin sync-header">Synchronize</h3>
+    	<div class="sync-container">
+				<div class="mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField">
+					<input type="text" class="sync-add-input mdc-text-field__input" id="sync-key-input-id" required>
+					<label for="sync-key-input-id" class="mdc-text-field__label">Bookmark key</label>
+					<div class="mdc-text-field__outline">
+						<svg>
+							<path class="mdc-text-field__outline-path"/>
+						</svg>
+					</div>
+					<div class="mdc-text-field__idle-outline"></div>
+				</div>
+	    	<button type="button" class="sync-add-button mdc-button mdc-button--stroked" disabled>Sync</button>
+    	</div>
+    </section>
+  </div>
+  <div class="bookmarks">
+		<div class="bookmarks-tree"></div>
+		<div class="bookmarks-button-container">
+			<button type="button" class="bookmarks-go-back mdc-button mdc-button--stroked">Back</button>
+		</div>
+	</div>
+</body>
+</html>

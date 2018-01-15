@@ -1,0 +1,31 @@
+@import '@material/button/mdc-button';
+
+.mdc-button.secondary-stroked-button {
+  @include mdc-button-ink-color($mdc-theme-secondary);
+  @include mdc-button-stroke-color($mdc-theme-secondary);
+  @include mdc-states(secondary);
+
+  @include mdc-theme-dark(".mdc-button") {
+    @include mdc-button-ink-color($mdc-theme-secondary);
+    @include mdc-button-stroke-color($mdc-theme-secondary);
+    @include mdc-states(secondary);
+  }
+}
+
+.mdc-text-field__input {
+  box-sizing: content-box;
+}
+
+.mdc-typography {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  line-height: 1.15em;
+}
+
+.mdc-typography--headline {
+  font-family: inherit;
+}
+
+.mdc-list {
+  font-family: inherit;
+}

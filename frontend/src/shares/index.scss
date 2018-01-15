@@ -1,0 +1,44 @@
+@import '../materialFonts';
+
+.shares {
+  padding: 0;
+
+  &-path {
+    display: flex;
+  }
+
+  &-segment {
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &-separator {
+    flex-shrink: 0;
+  }
+
+  .mdc-list-group__subheader {
+    margin-bottom: 0 !important;
+  }
+
+  .mdc-list-item__text {
+    overflow: hidden;
+  }
+
+  .mdc-list-item__meta {
+    display: flex;
+
+    i {
+      font-size: 1.5em;
+    }
+  }
+
+  .button {
+    margin: 0 2px;
+    user-select: none;
+  }
+
+
+}
+
