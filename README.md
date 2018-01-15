@@ -16,6 +16,6 @@ By default extension will connect to http://localhost:9000 (url in env.js).
 Install all dependencies and run app.py (python3 and pip required):
 ```shell
 $ cd mock
-$ pip install -r requirements.py
+$ pip install -r requirements.txt
 $ python3 app.py
 ```
