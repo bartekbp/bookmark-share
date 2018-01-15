@@ -4,3 +4,7 @@
 /frontend/env.js
 /lambda/project.json
 /mock/**/__pycache__/**
+/mock/Include/
+/mock/Lib/
+/mock/Scripts/
+/mock/pyvenv.cfg
