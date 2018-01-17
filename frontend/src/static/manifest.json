@@ -1,7 +1,7 @@
 {
   "name": "Bookmark share",
   "description" : "Share bookmarks with your friends!",
-  "version": "2.2",
+  "version": "2.3",
   "manifest_version": 2,
   "icons": {
       "48": "ic_book_black_24dp.png"
