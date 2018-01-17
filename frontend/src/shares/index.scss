@@ -37,8 +37,37 @@
   .button {
     margin: 0 2px;
     user-select: none;
+
+    &.disabled {
+      cursor: not-allowed;
+    }
   }
 
+  &-push-button {
+    @keyframes pushAnimaton {
+      25% { transform: scale(1.15) }
+      75% { transform: scale(0.85) }
+    }
 
+    animation: pushAnimaton 2s infinite linear;
+    animation-play-state: paused;
+
+    &.animation-in-progress {
+      animation-play-state: running;
+    }
+  }
+
+  &-sync-button {
+    @keyframes syncingAnimation {
+      from { transform: rotate(360deg) }
+    }
+
+    animation: syncingAnimation 2s infinite linear;
+    animation-play-state: paused;
+
+    &.animation-in-progress {
+      animation-play-state: running;
+    }
+  }
 }
 

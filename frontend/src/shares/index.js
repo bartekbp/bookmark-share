@@ -27,9 +27,28 @@ export default class Shares {
       return e.delegateTarget.dataset.chromeid.trim();
     };
 
-    delegate(this.el, ".shares-push-button", "click", async e => {
+    const animate = async (e, cb) => {
+      const target = e.delegateTarget;
+      if (target.classList.contains("disabled")) {
+        return;
+      }
+
+      const cleanupHandler = () => {
+        classes.remove("disabled");
+        classes.remove("animation-in-progress");
+        target.removeEventListener("webkitAnimationIteration", cleanupHandler);
+      };
+
+      const classes = target.classList;
+      classes.add("animation-in-progress");
+      classes.add("disabled");
+      await cb();
+      target.addEventListener("webkitAnimationIteration", cleanupHandler);
+    };
+
+    delegate(this.el, ".shares-push-button", "click", e => {
       const chromeId = getChromeIdForButton(e);
-      await updateFromChrome(chromeId);
+      animate(e, () => updateFromChrome(chromeId));
     });
 
     delegate(this.el, ".shares-remove-button", "click", e => {
@@ -39,7 +58,7 @@ export default class Shares {
 
     delegate(this.el, ".shares-sync-button", "click", e => {
       const chromeId = getChromeIdForButton(e);
-      syncToChrome(chromeId);
+      animate(e, () => syncToChrome(chromeId));
     });
 
     delegate(this.el, ".shares-element-uuid", "click", e => {
