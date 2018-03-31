@@ -16,7 +16,7 @@
     "chokidar": "1.7.0",
     "chrome-promise": "2.1.2",
     "clean-webpack-plugin": "0.1.17",
-    "copy-webpack-plugin": "4.3.1",
+    "copy-webpack-plugin": "4.5.1",
     "core-js": "2.5.3",
     "cross-env": "5.0.5",
     "css-loader": "0.28.7",
