@@ -29,7 +29,7 @@
     "http-proxy-middleware": "0.17.4",
     "inspire-tree": "4.2.1",
     "inspire-tree-dom": "4.0.3",
-    "jquery": "3.2.1",
+    "jquery": "3.5.0",
     "lodash": "4.17.4",
     "lodash.assign": "4.2.0",
     "material-components-web": "0.28.0",
